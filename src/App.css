@@ -1,0 +1,40 @@
+/* App Animations and Layout Enhancements */
+
+.birthday-app {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #FFF9FA;
+}
+
+@keyframes stepFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-content-container {
+  width: 100%;
+  animation: stepFadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF1F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #FDA4AF;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FB7185;
+}
